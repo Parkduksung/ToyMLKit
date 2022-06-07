@@ -21,6 +21,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ToyMLKit"
+        android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
             android:name=".ui.splash.SplashActivity"
@@ -35,11 +36,18 @@
 
         <activity
             android:name=".ui.onboard.OnBoardActivity"
+            android:exported="false"
             android:launchMode="singleTask" />
 
         <activity
             android:name=".ui.home.HomeActivity"
+            android:exported="false"
             android:launchMode="singleTask" />
+
+        <activity
+            android:name=".ui.interpret.InterpretActivity"
+            android:exported="false" />
+
 
         <provider
             android:name="androidx.core.content.FileProvider"

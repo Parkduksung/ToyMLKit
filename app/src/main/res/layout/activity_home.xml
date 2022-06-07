@@ -29,7 +29,7 @@
             android:id="@+id/container_get_photo"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:background="@drawable/bg_round"
+            android:background="@drawable/svg2"
             android:drawableTop="@drawable/ic_camera"
             android:gravity="center"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -40,39 +40,13 @@
             app:layout_constraintVertical_bias=".4"
             app:layout_constraintWidth_percent=".4">
 
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:background="@drawable/ic_photo"
-                android:backgroundTint="@color/white"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintDimensionRatio="H,1:1"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHeight_percent=".5"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="@color/white"
-                android:text="갤러리에서 사진 불러오기"
-                android:textSize="13dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias=".9" />
-
-
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/container_take_photo"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:background="@drawable/bg_round"
-            android:drawableTop="@drawable/ic_camera"
+            android:background="@drawable/svg3"
             android:gravity="center"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintDimensionRatio="H,1:1"
@@ -82,31 +56,6 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.8"
             app:layout_constraintWidth_percent=".4">
-
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:background="@drawable/ic_camera"
-                android:backgroundTint="@color/white"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintDimensionRatio="H,1:1"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHeight_percent=".5"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="사진 촬영하기"
-                android:textColor="@color/white"
-                android:textSize="13dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias=".9" />
-
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

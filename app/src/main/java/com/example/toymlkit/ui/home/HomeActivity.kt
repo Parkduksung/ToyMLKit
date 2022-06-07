@@ -1,25 +1,29 @@
 package com.example.toymlkit.ui.home
 
+
+import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import androidx.activity.result.contract.ActivityResultContracts
-import androidx.activity.viewModels
 import com.example.toymlkit.R
 import com.example.toymlkit.base.BaseActivity
 import com.example.toymlkit.databinding.ActivityHomeBinding
+import com.example.toymlkit.ui.interpret.InterpretActivity
+import com.example.toymlkit.ui.interpret.ProcessFragment.Companion.KEY_URI
+
 import com.example.toymlkit.util.FlexibleTakePicture
 import com.example.toymlkit.util.MediaUtil.Companion.getMediaUri
-import com.example.toymlkit.util.MediaUtil.Companion.scanMediaToBitmap
 import com.example.toymlkit.util.checkPermission
 import dagger.hilt.android.AndroidEntryPoint
+
 
 @AndroidEntryPoint
 class HomeActivity : BaseActivity<ActivityHomeBinding>(R.layout.activity_home) {
 
-    private val homeViewModel by viewModels<HomeViewModel>()
-
     private val choosePhoto = registerForActivityResult(ActivityResultContracts.GetContent()) {
-        homeViewModel.choose(it)
+        val intent = Intent(this@HomeActivity, InterpretActivity::class.java)
+        intent.putExtra(KEY_URI, it.toString())
+        startActivity(intent)
     }
 
     private var photoUri: Uri? = null
@@ -28,11 +32,9 @@ class HomeActivity : BaseActivity<ActivityHomeBinding>(R.layout.activity_home) {
     private val takePhoto = registerForActivityResult(flexibleTakePicture) { isSuccess ->
         if (isSuccess) {
             photoUri?.let { uri ->
-                scanMediaToBitmap(uri) {
-                    runOnUiThread {
-                        homeViewModel.takePhoto(it)
-                    }
-                }
+                val intent = Intent(this@HomeActivity, InterpretActivity::class.java)
+                intent.putExtra(KEY_URI, uri.toString())
+                startActivity(intent)
             }
         }
     }
@@ -57,7 +59,6 @@ class HomeActivity : BaseActivity<ActivityHomeBinding>(R.layout.activity_home) {
                 }
             }
         }
-
-
     }
+
 }

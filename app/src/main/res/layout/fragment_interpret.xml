@@ -10,44 +10,40 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <TextView
+        <ProgressBar
+            android:id="@+id/progress"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="직접 얼굴 사진을 찍어\n얼굴을 분석하실 수도 있습니다.\n사진 촬영 후 얼굴에 맞는\n화장법을 추천 받아 보세요!"
-            android:textColor="@color/pink"
-            android:textSize="18dp"
-            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias=".1" />
-
+            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
             android:id="@+id/image"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:src="@drawable/svg3"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintDimensionRatio="H,1:1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias=".6"
-            app:layout_constraintWidth_percent=".7" />
+            app:layout_constraintVertical_bias=".4" />
 
-        <ImageView
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/pointer"
+            android:gravity="center"
+            android:text="얼굴 분석 중입니다.\n잠시만 기다려 주세요."
+            android:textColor="@color/pink"
+            android:textSize="20dp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="H,1:1"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias=".85" />
+            app:layout_constraintVertical_bias=".8" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

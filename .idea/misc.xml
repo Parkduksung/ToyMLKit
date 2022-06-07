@@ -7,14 +7,22 @@
         <entry key="app/src/main/res/drawable/bg_shape_oval.xml" value="0.198" />
         <entry key="app/src/main/res/drawable/ic_camera.xml" value="0.198" />
         <entry key="app/src/main/res/drawable/shape_dot.xml" value="0.1375" />
+        <entry key="app/src/main/res/drawable/svg1.xml" value="0.3545" />
+        <entry key="app/src/main/res/drawable/svg2.xml" value="0.217" />
+        <entry key="app/src/main/res/drawable/svg3.xml" value="0.217" />
+        <entry key="app/src/main/res/drawable/svg4.xml" value="0.217" />
         <entry key="app/src/main/res/layout/activity_home.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/activity_interpret.xml" value="0.12396367943150415" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.15208333333333332" />
         <entry key="app/src/main/res/layout/activity_onboard.xml" value="0.165" />
-        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.2776268115942029" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.22" />
         <entry key="app/src/main/res/layout/fragment_content1.xml" value="0.2776268115942029" />
         <entry key="app/src/main/res/layout/fragment_content2.xml" value="0.2776268115942029" />
+        <entry key="app/src/main/res/layout/fragment_interpret.xml" value="0.2697734074390765" />
+        <entry key="app/src/main/res/layout/fragment_result.xml" value="0.165" />
         <entry key="app/src/main/res/layout/fragment_splash1.xml" value="0.2776268115942029" />
         <entry key="app/src/main/res/layout/fragment_splash2.xml" value="0.3862530413625304" />
+        <entry key="app/src/main/res/layout/view_explain_result.xml" value="0.271483539974348" />
       </map>
     </option>
   </component>
